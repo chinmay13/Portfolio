@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ReactImg from "../assets/React-icon.png";
+import { useScroll, animated, useSpring } from "@react-spring/web";
 
 function Skills() {
+  const containerRef = React.useRef(null);
+  const handleScroll = (event) => {
+    console.log(event);
+  };
+
+  const applyScrollEvent = () => {
+    // console.log("adding scroll event");
+    // window.addEventListener("scroll", handleScroll);
+  };
+  //   const { scrollYProgress } = useScroll({
+  //     container: containerRef,
+  //     onChange: ({ value: { scrollYProgress } }) => {
+  //       console.log(scrollYProgress);
+  //     },
+  //   });
+  //   const removeEvent = () => {
+  //     console.log("removing scroll event");
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
   return (
-    <div name="skills" className="bg-[#0a192F] h-screen w-full text-gray-300">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center items-center w-full h-full">
+    <div
+      name="skills"
+      className="bg-[#0a192F] h-screen w-full text-gray-300"
+      //   onMouseEnter={applyScrollEvent}
+      //   onMouseLeave={removeEvent}
+    >
+      <animated.div
+        // style={{ opacity: scrollYProgress }}
+        className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center items-center w-full h-full"
+      >
         <div>
           <p className="text-4xl font-bold inline border-b-4 border-pink-600">
             Experience
@@ -46,7 +74,7 @@ function Skills() {
             <p>React JS</p>
           </div>
         </div>
-      </div>
+      </animated.div>
     </div>
   );
 }
