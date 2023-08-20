@@ -3,7 +3,7 @@ import React from "react";
 function Contact() {
   return (
     <div
-      name="contact"
+      name="Contact"
       className="bg-[#0a192F] h-screen w-full  mx-auto flex p-4 justify-center items-center"
     >
       <form
@@ -16,7 +16,7 @@ function Contact() {
             Contact
           </p>
           <p className="py-4 text-gray-300">
-            Lets connect! email me:chinmaybhate123@gmail.com
+            Fill the form or mail me @ chinmaybhate123@gmail.com
           </p>
         </div>
         <input
