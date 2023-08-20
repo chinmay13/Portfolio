@@ -9,7 +9,8 @@ import {
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import Resume from "../assets/Resume_Chinmay_Bhate_2023.pdf";
-import { Element, scroller, Link } from "react-scroll";
+import { Link } from "react-scroll";
+import { Link as EmailLink } from "react-router-dom";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 function Navbar() {
@@ -17,6 +18,10 @@ function Navbar() {
 
   const handleClick = () => setNav(!nav);
 
+  const handleMailTo = (e) => {
+    e.preventDefault();
+    window.location = "mailto:chinmaybhate123@gmail.com";
+  };
   return (
     <div className="fixed w-full h-[80px] flex justify-end items-center px-4 bg-[#0a192F] text-gray-300">
       {/* menu */}
@@ -121,6 +126,7 @@ function Navbar() {
             <a
               className="flex justify-between items-center w-full text-grey-300"
               href="/"
+              onClick={handleMailTo}
             >
               Email <HiOutlineMail size={30} />
             </a>
