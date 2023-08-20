@@ -12,7 +12,7 @@ import Resume from "../assets/Resume_Chinmay_Bhate_2023.pdf";
 import { Link } from "react-scroll";
 import { Link as EmailLink } from "react-router-dom";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-
+import style from "./Common-style";
 function Navbar() {
   const [nav, setNav] = useState(false);
 
@@ -23,37 +23,72 @@ function Navbar() {
     window.location = "mailto:chinmaybhate123@gmail.com";
   };
   return (
-    <div className="fixed w-full h-[80px] flex justify-end items-center px-4 bg-[#0a192F] text-gray-300">
+    <div
+      className={
+        `fixed w-full h-[80px] flex justify-end items-center px-4 text-gray-300 ` +
+        style.background
+      }
+    >
       {/* menu */}
 
       <ul className="hidden md:flex">
         <li targetid="Home">
-          <Link to="Home" smooth={true} duration={500}>
+          <Link
+            to="Home"
+            className={style.hoverTextColor}
+            smooth={true}
+            duration={500}
+          >
             Home
           </Link>
         </li>
         <li targetid="About">
-          <Link to="About" smooth={true} duration={500}>
+          <Link
+            to="About"
+            className={style.hoverTextColor}
+            smooth={true}
+            duration={500}
+          >
             About
           </Link>
         </li>
         <li targetid="Skills">
-          <Link to="Skills" smooth={true} duration={500}>
+          <Link
+            to="Skills"
+            className={style.hoverTextColor}
+            smooth={true}
+            duration={500}
+          >
             Skills
           </Link>
         </li>
         <li targetid="Experience">
-          <Link to="Experience" smooth={true} duration={500}>
+          <Link
+            to="Experience"
+            className={style.hoverTextColor}
+            smooth={true}
+            duration={500}
+          >
             Experience
           </Link>
         </li>
         <li targetid="Work">
-          <Link to="Work" smooth={true} duration={500}>
+          <Link
+            to="Work"
+            className={style.hoverTextColor}
+            smooth={true}
+            duration={500}
+          >
             Work
           </Link>
         </li>
         <li targetid="Contact">
-          <Link to="Contact" smooth={true} duration={500}>
+          <Link
+            to="Contact"
+            className={style.hoverTextColor}
+            smooth={true}
+            duration={500}
+          >
             Contact
           </Link>
         </li>

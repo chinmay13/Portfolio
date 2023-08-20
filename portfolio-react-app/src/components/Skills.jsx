@@ -7,7 +7,13 @@ import JavascriptImg from "../assets/javascript.png";
 import OracleImg from "../assets/oracle.png";
 import MongoDBImg from "../assets/mongodb.png";
 import FirebaseImg from "../assets/firebase.png";
+import NodeImg from "../assets/Node.png";
+import PostgresImg from "../assets/Postgres.png";
+import FlaskImg from "../assets/Flask.png";
+import GitHubImg from "../assets/GitHub.png";
+
 import { useScroll, animated, useSpring } from "@react-spring/web";
+import style from "./Common-style";
 
 function Skills() {
   const containerRef = React.useRef(null);
@@ -41,12 +47,16 @@ function Skills() {
         className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center items-center w-full h-full"
       >
         <div>
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600">
+          <p className={`text-4xl font-bold inline ` + style.underlineBorder}>
             Skills
           </p>
-          <p className="py-4"> These are the technologies I've worked with</p>
         </div>
-
+        <div>
+          <p className="py-4">
+            {" "}
+            These are some of the technologies that I have worked on
+          </p>
+        </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={JavaImg} alt="React Icon" />
@@ -70,7 +80,15 @@ function Skills() {
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={ReactImg} alt="React Icon" />
-            <p>React JS</p>
+            <p>React</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={NodeImg} alt="React Icon" />
+            <p>Node.js</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={FlaskImg} alt="React Icon" />
+            <p>Flask</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={MongoDBImg} alt="React Icon" />
@@ -83,6 +101,16 @@ function Skills() {
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={FirebaseImg} alt="React Icon" />
             <p>Firebase</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={PostgresImg} alt="React Icon" />
+            <p>Postgres</p>
+          </div>
+
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={GitHubImg} alt="React Icon" />
+            <p>GitHub</p>
           </div>
         </div>
       </animated.div>

@@ -1,18 +1,27 @@
 import React from "react";
-
+import style from "./Common-style";
 function Contact() {
   return (
     <div
       name="Contact"
-      className="bg-[#0a192F] h-screen w-full  mx-auto flex p-4 justify-center items-center"
+      className={
+        `mx-auto flex p-4 justify-center items-center ` +
+        style.background +
+        ` ` +
+        style.screenSize
+      }
     >
       <form
         method="POST"
         action="https://getform.io/f/b9f4a06b-f33b-4e6a-98f7-dc1c7df75358"
         className="flex flex-col max-w-[600px] w-full"
       >
-        <div className="pb-8">
-          <p className="text-4xl text-gray-300 font-bold inline border-b-4 border-pink-600">
+        <div className="pb-5">
+          <p
+            className={
+              `text-4xl text-gray-300 font-bold inline ` + style.underlineBorder
+            }
+          >
             Contact
           </p>
           <p className="py-4 text-gray-300">
@@ -37,7 +46,7 @@ function Contact() {
           rows="10"
           placeholder="Message"
         ></textarea>
-        <button className="text-white border-2 hover:bg-pink-600 duration-300 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
+        <button className={`px-8 py-3  my-6 ` + style.buttonStyle}>
           Let's Connect
         </button>
       </form>

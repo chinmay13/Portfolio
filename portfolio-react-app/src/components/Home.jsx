@@ -5,7 +5,7 @@ function Home() {
   return (
     <div name="Home" className={style.background + ` ` + style.screenSize}>
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className="text-pink-600">Hi my name is </p>
+        <p className={style.textColor}>Hi my name is </p>
         <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
           Chinmay Bhate
         </h1>
@@ -13,10 +13,17 @@ function Home() {
           I am a full stack developer
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          This is my description content
+          I am an adaptable and driven professional with 3 years of hands-on
+          experience with expertise in building innovative solutions that have
+          tangible impact.
         </p>
         <div>
-          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
+          <button
+            className={
+              `group border-2 px-6 py-3 my-2 flex items-center border-[#64FFDA] ` +
+              style.textColor
+            }
+          >
             View Work
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-3" />
