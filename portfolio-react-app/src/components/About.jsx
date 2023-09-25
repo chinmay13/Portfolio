@@ -19,7 +19,7 @@ function About() {
           <div></div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-4 px-4">
-          <div className="sm:text-left text-1xl">
+          <div className="sm:text-center text-1xl">
             <p className="pb-4">
               Welcome to my portfolio! I'm a dynamic IT professional with a
               strong background in software development, specializing in Java,
