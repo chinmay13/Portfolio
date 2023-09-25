@@ -12,9 +12,8 @@ function Experience() {
           <p className={`text-4xl font-bold inline ` + style.underlineBorder}>
             Experience
           </p>
-          <p className="py-4"> This is my Work experience</p>
         </div>
-        <div className=" grid grid-cols-2 max-w-[1000px]  text-grey-200">
+        <div className=" grid grid-cols-2 max-w-[1000px]  text-grey-200 py-4">
           <div className="border-r-1 border-pink-600"> RIT Image</div>
           <div> GTA Description</div>
           <div className="border-r-1 border-pink-600 py-4">eQ Image</div>
