@@ -44,7 +44,7 @@ function Skills() {
     >
       <animated.div
         // style={{ opacity: scrollYProgress }}
-        className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center items-center w-full h-full"
+        className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center items-center w-full "
       >
         <div>
           <p className={`text-4xl font-bold inline ` + style.underlineBorder}>

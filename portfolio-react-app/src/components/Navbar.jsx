@@ -116,23 +116,28 @@ function Navbar() {
             About
           </Link>
         </li>
-        <li onClick={handleClick} className="py-6 text-4xl">
-          <Link to="Skills" smooth={true} duration={500}>
+        <li className="py-6 text-4xl">
+          <Link onClick={handleClick} to="Skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li onClick={handleClick} className="py-6 text-4xl">
-          <Link to="Experience" smooth={true} duration={500}>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={handleClick}
+            to="Experience"
+            smooth={true}
+            duration={500}
+          >
             Experience
           </Link>
         </li>
-        <li onClick={handleClick} className="py-6 text-4xl">
-          <Link to="Work" smooth={true} duration={500}>
+        <li className="py-6 text-4xl">
+          <Link onClick={handleClick} to="Work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li onClick={handleClick} className="py-6 text-4xl">
-          <Link to="Contact" smooth={true} duration={500}>
+        <li className="py-6 text-4xl">
+          <Link onClick={handleClick} to="Contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>

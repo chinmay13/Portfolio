@@ -46,8 +46,8 @@ function About() {
           </div>
           {/* <div className="justify-center items-center align-middle">
             <img src={pic1} className="max-h-[200px] max-w-[200px] mx-auto" />
-          </div> */}
-          <div></div>
+          </div> 
+          <div></div> */}
         </div>
       </div>
     </div>
