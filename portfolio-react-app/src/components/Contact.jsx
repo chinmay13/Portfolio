@@ -8,7 +8,7 @@ function Contact() {
         `mx-auto flex p-4 justify-center items-center ` +
         style.background +
         ` ` +
-        style.screenSize
+        style.screenWidth
       }
     >
       <form

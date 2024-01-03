@@ -7,7 +7,7 @@ function Experience() {
   return (
     <div
       name="Experience"
-      className={style.background + ` ` + style.screenSize}
+      className={style.background + ` ` + style.screenWidth}
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center items-center w-full text-gray-300">
         <div>
@@ -16,11 +16,11 @@ function Experience() {
           </p>
           <p className="py-4"></p>
         </div>
-        <div className=" grid grid-cols-2 max-w-[1000px]  text-grey-200">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 max-w-[1000px]  text-grey-200">
           <div className="border-r-1 py-4 m-auto">
             <img className="w-[8rem] m-auto" src={RIT} alt="RIT Icon" />
           </div>
-          <div>
+          <div className="pb-4 sm:pb-0">
             <p className="font-bold underline">Graduate Teaching Assistant:</p>
             <p>
               - Recognized as one of the 6 Graduate TAs for the Computer Science
@@ -31,6 +31,9 @@ function Experience() {
               AP Students (CSCI 140) and Mentoring Students for the same
               courses.
             </p>
+          </div>
+          <div className="border-r-1 py-10 flex items-start justify-center">
+            <img className="w-[15rem]" src={eQ} alt="eQ Icon" />
           </div>
           <div className="py-4">
             <p className="font-bold underline">Internship:</p>
@@ -44,15 +47,8 @@ function Experience() {
               - Developed robust APIs to synchronize data between Solumina and
               TeamCenter Enterprise seamlessly.
             </p>
-          </div>
-          <div className="border-r-1 py-4 m-auto">
-            <img className="w-[15rem] mx-auto" src={eQ} alt="eQ Icon" />
-          </div>
-          <div className="border-r-1 py-4 m-auto">
-            <img className="w-[15rem] mx-auto" src={eQ} alt="eQ Icon" />
-          </div>
-          <div>
-            <p className="font-bold underline">
+
+            <p className="font-bold underline pt-4">
               Software Developer - Multiple Activities Team:
             </p>
             <p>
@@ -71,6 +67,7 @@ function Experience() {
               methodology
             </p>
           </div>
+          <div></div>
         </div>
       </div>
     </div>

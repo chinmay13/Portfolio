@@ -1,6 +1,7 @@
 const style = {
   background: `bg-[#0a192F]`,
   screenSize: `h-screen w-full`,
+  screenWidth: `w-full`,
   textColor: `text-[#64FFDA]`,
   hoverTextColor: `hover:text-[#64FFDA]`,
   underlineBorder: `border-b-4 border-[#64FFDA]`,

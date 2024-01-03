@@ -38,7 +38,7 @@ function Skills() {
   return (
     <div
       name="Skills"
-      className="bg-[#0a192F] h-screen w-full text-gray-300"
+      className="bg-[#0a192F] w-full text-gray-300"
       //   onMouseEnter={applyScrollEvent}
       //   onMouseLeave={removeEvent}
     >

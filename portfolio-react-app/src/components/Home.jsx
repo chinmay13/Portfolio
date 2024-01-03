@@ -1,6 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import style from "./Common-style";
+import { Link } from "react-scroll";
 function Home() {
   return (
     <div name="Home" className={style.background + ` ` + style.screenSize}>
@@ -18,17 +19,25 @@ function Home() {
           tangible impact.
         </p>
         <div>
-          <button
-            className={
-              `group border-2 px-6 py-3 my-2 flex items-center border-[#64FFDA] ` +
-              style.textColor
-            }
+          <Link
+            to="Work"
+            className={style.hoverTextColor}
+            smooth={true}
+            duration={500}
           >
-            View Work
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
-          </button>
+            <button
+              className={
+                `group border-2 px-6 py-3 my-2 flex items-center border-[#64FFDA] ` +
+                style.textColor
+              }
+              onClick={() => {}}
+            >
+              View Work
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="ml-3" />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

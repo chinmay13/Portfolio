@@ -20,7 +20,7 @@ function App() {
             top: "5px",
             left: "5px",
             height: "5.5rem",
-            zIndex: "1",
+            zIndex: "5",
           }}
         />
       </div>

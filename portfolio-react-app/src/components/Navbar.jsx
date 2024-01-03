@@ -28,6 +28,7 @@ function Navbar() {
         `fixed w-full h-[80px] flex justify-end items-center px-4 text-gray-300 ` +
         style.background
       }
+      style={{ zIndex: "2" }}
     >
       {/* menu */}
 
